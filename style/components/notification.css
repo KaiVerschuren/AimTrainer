@@ -1,0 +1,51 @@
+.notification {
+    position: absolute;
+    top: -5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    width: 25rem;
+    border-radius: .5rem;
+    padding: .5rem;
+    animation: noti 0.3s linear forwards;
+    animation-delay: 0.3s;
+    transition: 0.3s linear;
+    background: oklch(from var(--white) l c h / calc(alpha - 0.95));
+    backdrop-filter: blur(.5rem) brightness(0.9);
+    box-shadow: 0 4px 30px 2px oklch(from var(--black) l c h / calc(alpha - 0.05));
+}
+
+.notification-start {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification-content {
+    flex: 10;
+    font-weight: 700;
+}
+
+.notification-end {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.notification-close {
+    transform: translate(-50%, -5rem);
+}
+
+@keyframes noti {
+    from {
+        top: -5rem;
+    }
+    to {
+        top: 1rem;
+    }
+}

@@ -1,0 +1,31 @@
+.trainer {
+    margin-top: 5rem;
+    border-radius: 1.5rem;
+    box-shadow: inset 0px 0px 50px 3px rgba(0, 0, 0, 0.2);
+    height: 35rem;
+    position: relative;
+}
+
+.trainer-counter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--white-soft);
+}
+
+.trainer-target {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: oklch(from var(--primary) l c h / calc(alpha - 0.75));
+    border: 2px solid var(--primary);
+    box-shadow: inset 0px 0px 17.1px 6px var(--primary);
+    z-index: 100;
+}

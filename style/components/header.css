@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    background: var(--base-100);
+    padding: 0 2rem;
+    margin: 1rem 0;
+    border-radius: 1.5rem;
+    box-shadow: 0px 7px 25px -8px rgba(0, 0, 0, 0.25);
+}
+
+header > * {
+    flex: 1;
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: start;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header-ul {
+    display: flex;
+    gap: 1.5rem;w
+}
+
+.header-account {
+    display: flex;
+    justify-content: end;
+}
