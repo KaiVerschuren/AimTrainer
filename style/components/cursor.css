@@ -6,10 +6,31 @@
 }
 
 .cursor-2, .cursor-2-preview {
-    font-size: 3rem;
-    font-weight: 200;
+    height: 1rem;
+    aspect-ratio: 1/1;
+}
+
+.cursor-1, .cursor-2 {
+    position: fixed;
+    left: -100px;
+    top: -100px;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    display: none;
+}
+
+.cursor-img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 
 .cursor-3, .cursor-3-preview {
     font-weight: 700;
+}
+
+html.hide-system-cursor,
+html.hide-system-cursor * {
+    cursor: none !important;
 }

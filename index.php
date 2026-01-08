@@ -15,13 +15,13 @@ top("Trainer");
             <div class="button-wrapper">
                <div>
                   <p>Hits in 30 seconds</p>
-                  <button class="btnPrimary">
+                  <button class="btnPrimary btnStartHits">
                      Start
                   </button>
                </div>
                <div>
                   <p>Seconds for 30 hits</p>
-                  <button class="btnSecondary">
+                  <button class="btnSecondary btnStartSeconds">
                      Start
                   </button>
                </div>
@@ -32,13 +32,13 @@ top("Trainer");
                Custom Cursor
             </h2>
             <div class="custom-cursor-wrapper">
-               <div class="custom-cursor-tile">
+               <div class="custom-cursor-tile" id="preview1">
                   <div class="cursor-1-preview"></div>
                </div>
-               <div class="custom-cursor-tile">
-                  <div class="cursor-2-preview">+</div>
+               <div class="custom-cursor-tile" id="preview2">
+                  <div class="cursor-2-preview"><img class="cursor-img" src="inc/assets/cursor.png" alt=""></div>
                </div>
-               <div class="custom-cursor-tile">
+               <div class="custom-cursor-tile" id="preview3">
                   <div class="cursor-3-preview">Default</div>
                </div>
             </div>
