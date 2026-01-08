@@ -42,11 +42,11 @@ function top($pageTitle)
             <div class="header-account">
                 <?php if (isLoggedIn()) {
                 ?>
-                    <button class="btnSecondary">Log Out</button>
+                    <button class="btnSecondary">Log Out</==button>
                 <?php
                 } else {
                 ?>
-                    <button class="btnPrimary">Login</button>
+                    <!-- <button class="btnPrimary">Login</button> -->
                 <?php
                 } ?>
             </div>
@@ -66,6 +66,8 @@ function bottom()
 
         </footer>
         <script defer src="./inc/js/notification.js"></script>
+        <script defer src="./inc/js/trainer.js"></script>
+        <script defer src="./inc/js/cursor.js"></script>
     </body>
 
     </html>

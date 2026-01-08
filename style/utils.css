@@ -57,7 +57,7 @@
   text-decoration: none;
   letter-spacing: -0.05em;
   background-color: var(--secondary);
-  color: var(--black);
+  color: var(--white);
   padding: 0.5em 1em;
   border-radius: 6px;
   border: none;
@@ -74,7 +74,6 @@
   box-shadow: 0 14px 18px oklch(from var(--secondary) l c h / calc(alpha - 0.5)),
     0 10px 10px oklch(from var(--secondary) l c h / calc(alpha - 0.5)),
     0 0 120px -10px var(--secondary);
-  color: var(--white);
 }
 
 .accentShadow {

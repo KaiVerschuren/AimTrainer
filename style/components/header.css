@@ -28,7 +28,7 @@ header > * {
 
 .header-ul {
     display: flex;
-    gap: 1.5rem;w
+    gap: 1.5rem;
 }
 
 .header-account {

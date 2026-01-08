@@ -4,6 +4,68 @@
     box-shadow: inset 0px 0px 50px 3px rgba(0, 0, 0, 0.2);
     height: 35rem;
     position: relative;
+    overflow: hidden;
+}
+
+.trainer-menu {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    border-radius: 1.5rem;
+    background-color: var(--background);
+    box-shadow: inset 0px 0px 50px 3px rgba(0, 0, 0, 0.2);
+    padding: 0rem 1.5rem;
+}
+
+.trainer-menu-title {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+.trainer-options {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.trainer-options-tile {
+    background: var(--base-100);
+    flex: 1;
+    padding: .5rem 1rem;
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0px 7px 25px -8px rgba(0, 0, 0, 0.25);
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.button-wrapper p {
+    margin-bottom: 0.5rem;
+}
+
+.custom-cursor-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-cursor-tile {
+    height: 5rem;
+    aspect-ratio: 1/1;
+    border-radius: .5rem;
+    box-shadow: 0px 7px 25px -8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 
 .trainer-counter {
@@ -18,8 +80,6 @@
 
 .trainer-target {
     position: absolute;
-    top: 10%;
-    left: 50%;
     transform: translate(-50%, -50%);
     height: 75px;
     aspect-ratio: 1/1;
@@ -27,5 +87,4 @@
     background-color: oklch(from var(--primary) l c h / calc(alpha - 0.75));
     border: 2px solid var(--primary);
     box-shadow: inset 0px 0px 17.1px 6px var(--primary);
-    z-index: 100;
 }
