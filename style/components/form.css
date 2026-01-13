@@ -31,3 +31,12 @@
 .form-button {
     width: 100%;
 }
+
+.form-link {
+    width: 100%;
+    text-align: right;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--base-300);
+    margin-bottom: 1rem;
+}

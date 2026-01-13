@@ -11,3 +11,4 @@ function connectDB()
     }
     return $mysqli;
 }
+

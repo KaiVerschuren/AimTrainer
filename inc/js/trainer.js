@@ -17,6 +17,13 @@ let gameMode = 'hits'; // 'hits' or 'seconds'
 
 let timerHits;
 
+let GAME_HITS_SECONDS = 0;
+let GAME_HITS_HITS = 0;
+
+let GAME_SECONDS_SECONDS = 30;
+let GAME_SECONDS_HITS = 30;
+
+
 function startGame() {
     menu.style.top = '100%';
     formTrainer.style.top = '100%';
@@ -61,8 +68,8 @@ target.addEventListener('click', () => {
 
 buttonStartHits.addEventListener('click', () => {
     gameMode = 'hits';
-    currentScore = 30;
-    currentHits = 0;
+    currentSeconds = GAME_HITS_SECONDS;
+    currentHits = GAME_HITS_HITS;
     startTimerHits();
     updateCounter();
     startGame();
@@ -70,8 +77,8 @@ buttonStartHits.addEventListener('click', () => {
 
 buttonStartSeconds.addEventListener('click', () => {
     gameMode = 'seconds';
-    currentSeconds = 30;
-    currentHits = 0;
+    currentSeconds = GAME_SECONDS_SECONDS;
+    currentHits = GAME_SECONDS_HITS;
     updateCounter();
     startTimerSeconds();
     startGame();

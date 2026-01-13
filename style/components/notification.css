@@ -12,7 +12,7 @@
     animation: noti 0.3s linear forwards;
     animation-delay: 0.3s;
     transition: 0.3s linear;
-    background: oklch(from var(--white) l c h / calc(alpha - 0.95));
+    background: oklch(from var(--base-300) l c h / calc(alpha - 0.95));
     backdrop-filter: blur(.5rem) brightness(0.9);
     box-shadow: 0 4px 30px 2px oklch(from var(--black) l c h / calc(alpha - 0.05));
 }
@@ -38,7 +38,7 @@
 }
 
 .notification-close {
-    transform: translate(-50%, -5rem);
+    transform: translate(-50%, -10rem);
 }
 
 @keyframes noti {
