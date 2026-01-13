@@ -1,10 +1,22 @@
 <?php
 include 'inc/php/layout.php';
 
+initSession();
+
 top("Trainer");
 
 ?>
 <div class="trainer">
+   <form action="" method="post" class="form-trainer">
+      <h1>End of game</h1>
+      <div class="form-wrapper">
+         <p>Seconds</p>
+         <input class="form-input-score-seconds input" type="text" value="" readonly>
+         <p>Hits</p>
+         <input class="form-input-score-hits input" type="text" value="" readonly>
+         <input class="btnPrimary form-button" type="submit" value="Submit as <?= $_SESSION['userName']; ?>">
+      </div>
+   </form>
    <div class="trainer-menu">
       <h1 class="trainer-menu-title">Trainer Menu</h1>
       <div class="trainer-options">
@@ -16,13 +28,13 @@ top("Trainer");
                <div>
                   <p>Hits in 30 seconds</p>
                   <button class="btnPrimary btnStartHits">
-                     Start
+                     Start Hits
                   </button>
                </div>
                <div>
                   <p>Seconds for 30 hits</p>
                   <button class="btnSecondary btnStartSeconds">
-                     Start
+                     Start Seconds
                   </button>
                </div>
             </div>
@@ -48,6 +60,7 @@ top("Trainer");
    <div class="trainer-counter">25</div>
    <div class="trainer-target" style="top: 23%; left:12%;"></div>
 </div>
+
 <?php
 
 bottom();

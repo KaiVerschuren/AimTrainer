@@ -42,11 +42,11 @@ function top($pageTitle)
             <div class="header-account">
                 <?php if (isLoggedIn()) {
                 ?>
-                    <button class="btnSecondary">Log Out</button>
+                    <a class="btnSecondary">Log Out</a>
                 <?php
                 } else {
                 ?>
-                    <button class="btnPrimary">Login</button>
+                    <a href="login.php" class="btnPrimary">Login</a>
                 <?php
                 } ?>
             </div>

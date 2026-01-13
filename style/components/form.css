@@ -1,0 +1,33 @@
+.form-trainer {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    border-radius: 1.5rem;
+    background-color: var(--background);
+    box-shadow: inset 0px 0px 50px 3px rgba(0, 0, 0, 0.2);
+    padding: 0rem 1.5rem;
+    transition: top 1s linear;
+}
+
+.form-wrapper {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-login-wrapper {
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+
+.form-button {
+    width: 100%;
+}
